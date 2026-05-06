@@ -7,45 +7,52 @@ const cadastrar = async (req, res) => {
         data
     });
 
-    res.json(item).status(201).end();
+    res.status(201).json(item);
 };
 
 const listar = async (req, res) => {
-    const lista = await prisma.automovel.findMany();
+    const lista = await prisma.automovel.findMany({
+        include: {
+            estadias: true
+        }
+    });
 
-    res.json(lista).status(200).end();
+    res.status(200).json(lista);
 };
 
 const buscar = async (req, res) => {
-    const { id } = req.params;
+    const { placa } = req.params;
     
     const item = await prisma.automovel.findUnique({
-        where: { id : Number(id) }
+        where: { placa },
+        include: {
+            estadias: true
+        }
     });
 
-    res.json(item).status(200).end();
+    res.status(200).json(item);
 };
 
 const atualizar = async (req, res) => {
-    const { id } = req.params;
+    const { placa } = req.params;
     const dados = req.body;
     
     const item = await prisma.automovel.update({
-        where: { id : Number(id) },
+        where: { placa },
         data: dados
     });
 
-    res.json(item).status(200).end();
+    res.status(200).json(item);
 };
 
 const excluir = async (req, res) => {
-    const { id } = req.params;
+    const { placa } = req.params;
     
     const item = await prisma.automovel.delete({
-        where: { id : Number(id) }
+        where: { placa }
     });
 
-    res.json(item).status(200).end();
+    res.status(200).json(item);
 };
 
 module.exports = {
