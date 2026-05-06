@@ -1,11 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Estacionamento ACME</title>
+    <title>Estacionamento</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
-    
+
+    <header>
+        <h1>Sistema de Estacionamento</h1>
+
+        <nav>
+            <a href="index.html">Automóveis</a>
+            <a href="estadias.html">Estadias</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="formulario">
+            <h2>Cadastrar Automóvel</h2>
+
+            <form id="formAutomovel">
+                <input type="text" id="placa" placeholder="Placa" required>
+                <input type="text" id="proprietario" placeholder="Proprietário" required>
+                <input type="text" id="tipo" placeholder="Tipo" required>
+                <input type="text" id="modelo" placeholder="Modelo" required>
+                <input type="text" id="marca" placeholder="Marca" required>
+                <input type="text" id="cor" placeholder="Cor">
+                <input type="number" id="ano" placeholder="Ano">
+                <input type="text" id="telefone" placeholder="Telefone" required>
+
+                <button type="submit">Cadastrar</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>Lista de Automóveis</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Placa</th>
+                        <th>Proprietário</th>
+                        <th>Modelo</th>
+                        <th>Ações</th>
+                    </tr>
+            </thead>
+            <tbody id="listaAutomoveis"></tbody>
+            </table>
+        </section>
+
+    </main>
+
+    <script src="./scripts/automoveis.js"></script>
 </body>
+
 </html>

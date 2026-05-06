@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estadias</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Controle de Estadias</h1>
+
+        <nav>
+            <a href="index.html">Automóveis</a>
+            <a href="estadias.html">Estadias</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="formulario">
+            <h2>Nova Estadia</h2>
+
+            <form id="formEstadia">
+                <input type="text" id="placa" placeholder="Placa do veículo" required>
+                <input type="number" id="valorHora" placeholder="Valor por hora" required>
+
+                <button type="submit">Cadastrar</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>Lista de Estadias</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Placa</th>
+                        <th>Entrada</th>
+                        <th>Saída</th>
+                        <th>Valor Total</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+
+                <tbody id="listaEstadias"></tbody>
+            </table>
+        </section>
+
+    </main>
+
+    <script src="./scripts/estadias.js"></script>
+</body>
+</html>
