@@ -48,14 +48,9 @@ O ESTACIONAMENTO ACME tem atuado em nossa cidade com ótimo atendimento e segura
 - ORM Prisma
 - Insomnia
 
-- Node.JS
-- JavaSript
-- VsCode
-- ORM Prisma
-- Insomnia
-
 ## Passo a Passo de como executar e testar
-## Clonar o projeto
+
+# Clonar o projeto
 
 ```bash
 git clone LINK_DO_REPOSITORIO
