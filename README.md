@@ -42,5 +42,9 @@ O ESTACIONAMENTO ACME tem atuado em nossa cidade com ótimo atendimento e segura
 - [CT005] Altere pelo menos duas estadias preenchendo a **saida** e verificando se calcula o **valorTotal**.
 
 ## Tecnologias
+- Node.JS
+- JavaSript
+- VsCode
+- ORM Prisma
+- Insomnia
 
-## Passo a Passo de como executar e testar
