@@ -43,4 +43,83 @@ O ESTACIONAMENTO ACME tem atuado em nossa cidade com ótimo atendimento e segura
 
 ## Tecnologias
 
+- Node.JS
+- JavaSript
+- VsCode
+- ORM Prisma
+- Insomnia
+
 ## Passo a Passo de como executar e testar
+## Clonar o projeto
+
+```bash
+git clone LINK_DO_REPOSITORIO
+```
+
+```bash
+cd nome-do-projeto
+```
+
+---
+
+# Back-end
+
+Entre na pasta:
+
+```bash
+cd api
+```
+Entre novamente pasta:
+
+```bash
+cd api
+```
+
+Instale as dependências:
+
+```bash
+npm install
+```
+
+Configure o `.env`:
+
+```env
+DATABASE_URL=""
+PORT=3000
+```
+
+Execute o servidor:
+
+```bash
+npm run dev
+```
+
+---
+
+# Front-end
+
+Abra outro terminal e entre na pasta:
+
+```bash
+cd web
+```
+
+Instale as dependências:
+
+```bash
+npm install
+```
+
+Execute o projeto:
+
+```bash
+npm run dev
+```
+
+## Diagramas
+
+| Nome da Foto | Foto |
+|---|---|
+| Diagrama de classes| ![Foto 1](./Documentação//Diagrama%20de%20classe.drawio.png) |
+| Diagrama de caso de uso | ![Foto 2](./Documentação/diagrama%20de%20caso%20de%20uso.drawio.png) |
+| Diagrama de atividades | ![Foto 3](./Documentação/Diagrama%20de%20atividades.png) |
